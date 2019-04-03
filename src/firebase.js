@@ -1,12 +1,12 @@
 
     // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyCEe4i1ctA_0VP28SkTxUADjksses3iLo4",
-      authDomain: "soy-viajera.firebaseapp.com",
-      databaseURL: "https://soy-viajera.firebaseio.com",
-      projectId: "soy-viajera",
-      storageBucket: "soy-viajera.appspot.com",
-      messagingSenderId: "621266714862"
+      apiKey: "AIzaSyBUdf3aJfaG8-xjfbd7aG1oVen4VppFzo0",
+    authDomain: "mujeres-viajeras.firebaseapp.com",
+    databaseURL: "https://mujeres-viajeras.firebaseio.com",
+    projectId: "mujeres-viajeras",
+    storageBucket: "mujeres-viajeras.appspot.com",
+    messagingSenderId: "241750337262"
     };
     firebase.initializeApp(config);
     // make auth and firestore references

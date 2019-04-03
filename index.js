@@ -90,8 +90,8 @@ document.addEventListener('DOMContentLoaded', app.init);
 // Agregar documentos
 function save() {
   let post = document.getElementById('post').value;
-  let select= document.getElementById("filterPost");
-  let selected= select.value;
+  let select = document.getElementById('filterPost');
+  let selected = select.value;
   console.log(selected);
   // let filterPost= selected.value;
   //const lastName =document.getElementById("apellido").value;
@@ -99,8 +99,7 @@ function save() {
   if (post == '') {
     alert('Necesitas crear el post');
     post.value = '';
-  }  
-  else {
+  } else {
     db.collection('userPost')
       .add({
         post: post,
@@ -111,7 +110,7 @@ function save() {
       .then(function(docRef) {
         console.log('Document written with ID: ', docRef.id);
         document.getElementById('post').value = '';
-        document.getElementById("filterPost").value="";
+        document.getElementById('filterPost').value = '';
         //document.getElementById("apellido").value = "";
         //document.getElementById("fecha").value = "";
       })
@@ -126,14 +125,15 @@ db.collection('userPost').onSnapshot(querySnapshot => {
   tableData.innerHTML = '';
   querySnapshot.forEach(doc => {
     console.log(`${doc.id} => ${doc.data().post}`);
-    tableData.innerHTML +=
-      `
+    tableData.innerHTML += `
       <div class="card mb-3">
           <h5 class="card-header">${doc.id}</h5>
         <div class="card-body">
           <p class="card-text">${doc.data().post}</p>
           <button class= "btn btn-danger" onclick ="deletePost('${doc.id}' )" >Eliminar</button>
-          <button class= "btn btn-warning" onclick ="editionPost('${doc.id}', '${doc.data().post}')" >Editar</button>
+          <button class= "btn btn-warning" onclick ="editionPost('${doc.id}', '${
+      doc.data().post
+    }')" >Editar</button>
         </div>
       </div>   `;
   });
@@ -185,7 +185,6 @@ function editionPost(id, post) {
         editButton.innerHTML = 'Compartir';
         document.getElementById('post').value = '';
         if (editButton.innerHTML == 'Compartir') {
-          
           // save();
           // document.location.href = document.location.href;
         }
@@ -198,9 +197,9 @@ function editionPost(id, post) {
   };
 }
 
-const selectFilter =()=>{
-  let select= document.getElementById("filterPost");
-  let selected= select.value;
+const selectFilter = () => {
+  let select = document.getElementById('filterPost');
+  let selected = select.value;
   console.log(selected);
   save();
-}
+};

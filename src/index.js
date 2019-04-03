@@ -129,7 +129,7 @@ db.collection('userPost').onSnapshot(querySnapshot => {
     tableData.innerHTML +=
       `
       <div class="card mb-3">
-          <h5 class="card-header">${doc.id}</h5>
+      <h5 class="card-header">${doc.id}<button>Likes</button> <label id="likes">1</label></h5>
         <div class="card-body">
           <p class="card-text">${doc.data().post}</p>
           <button class= "btn btn-danger" onclick ="deletePost('${doc.id}' )" >Eliminar</button>
