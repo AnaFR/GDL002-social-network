@@ -1,0 +1,139 @@
+/* @media only screen and (min-width : 320px) and (max-width : 500px) {
+ 
+  .card-img-top{
+    align-content: center;
+    
+    
+  }
+} */
+
+
+
+body{
+  font-family: 'Caudex', serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#logo{
+
+  align-content: center;
+}
+#slogan{
+width: 32.7rem;
+margin-left: auto;
+margin-right: auto;
+}
+
+/*centrar input text del slogan*/
+.close{
+  margin-left: auto;
+  margin-right: auto;
+}
+/*cambiar color input text del slogan*/
+form .form-control::-moz-placeholder {
+  color: black;
+  opacity: 1;
+}
+form .form-control:-ms-input-placeholder {
+  color: black;
+ }
+form .form-control::-webkit-input-placeholder {
+  color: black;
+}
+
+#principal-btn{
+text-align: center;
+}
+
+
+.fa-1x {
+font-size: 1.5rem;
+}
+.navbar-toggler.toggler-example {
+cursor: pointer;
+}
+
+.dark-pink-text {
+color: #AC003A;
+}
+
+.btncolor{
+background-color: #e95c6f;
+border: #b64857;
+}
+
+.main-color{
+background-color: #e95c6f;
+color: white;
+
+}
+
+.bk-color{
+background-color: #eaeaea;
+}
+
+#navInicio{
+  display: none;
+}
+
+#home{
+  display: none;
+}
+
+
+
+.slider{
+  margin-top: 5rem;
+  width: 10rem;
+  height: 3rem;
+}
+
+.hide {
+  display : none;
+}
+p {
+  padding: 5px;
+}
+
+/**** PAGES ****/
+.page{
+  display: none;
+  width: 100%;
+  min-height: 100%; /* allow for content off the bottom of the page */
+  position: absolute;  /* or absolute if the user needs to scroll for more content */
+  padding: 1rem 2rem;
+}
+.active{
+  display: block; 
+}
+#home{
+  background-color: #faf2f3;
+}
+#perfil{
+  background-color: #faf2f3;
+}
+#transporte{
+  background-color: #faf2f3;
+}
+h1{
+  font-size: 2rem;
+  font-weight: 600;
+  transition: all 0.4s;
+}
+.big{
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+textarea{
+  resize: none;
+  /* max-width: 100rem; */
+  width: 50rem;
+  word-wrap: break-word;
+  border: none;
+  border-radius: 1rem;
+}
+.centerPost{
+  align-items: center;
+  text-align: -webkit-center;
+}
